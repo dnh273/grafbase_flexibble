@@ -20,7 +20,7 @@ const Project = g.model("Project", {
   liveSiteUrl: g.url(),
   githubUrl: g.url(),
   category: g.string().search(),
-  createAt: g.relation(() => User),
+  createdBy: g.relation(() => User),
 });
 
 export default config({
